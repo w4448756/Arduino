@@ -29,6 +29,7 @@ void setup(){
 void loop(){
 
 	if(BT.available()){
+		BT_val=BT.read();
 		Serial.println(BT_val);
 	
 		if(BT_val=='+'||BT_val=='-'){
